@@ -1,0 +1,23 @@
+[project]
+name = "vis-embeddings"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vigil Varghese"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "scikit-learn>=1.9.1",
+    "sentence-transformers>=6.2.0",
+    "torch<2.3.0",
+]
+
+[project.scripts]
+visualize = "vis_embeddings.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"
